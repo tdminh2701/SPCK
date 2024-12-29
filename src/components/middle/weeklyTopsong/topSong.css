@@ -1,5 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Poppins Font Styles */
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.poppins-small {
+  font-size: 0.8rem; /* Example small size */
+}
+
+.poppins-regular {
+  font-size: 1rem; /* Example regular size */
+}
+
+.poppins-large {
+  font-size: 1.2rem; /* Example large size */
+}
+
+.poppins-larger {
+  font-size: 1.5rem; /* Example larger size */
+}
+
+.poppins-x-large { /* Example extra large */
+  font-size: 2rem;
+}
+
+.poppins-bold {
+  font-weight: bold;
+}
+
+.poppins-italic {
+  font-style: italic;
+}
+
+.poppins-light {
+  font-weight: 300;  /* Example light weight*/
+}
+
+.poppins-medium {
+    font-weight: 500; /* Example medium weight */
+}
+
+
 .songContainer{
     text-align: left;
     display: flex;
     gap: 20px;
+}
+.viewAll{
+    text-align: center;
+    padding: 6% 0;
+    cursor: pointer;
+}
+
+.viewAll > p{
+    color: white;
+    opacity: 1;
+}
+.detail{
+  width: 75%;
+  display: flex;
+  margin-left: 31%;
+  gap: 15%;
+}
+.time{
+  margin-left: 16%;
+}
+.release{
+  width: auto;
+}
+.viewAlltrends{
+  position: relative;
+  left: 45%;
+  background-color: #1E1E1E;
+  padding-top: 2%;
+  margin-top: 2%;
+  height: 7vh;
+  width: 15%;
+  text-align: center;
+  cursor: pointer;
+}
+.viewAlltrends> p{
+  margin: 0 0 0 0;
 }

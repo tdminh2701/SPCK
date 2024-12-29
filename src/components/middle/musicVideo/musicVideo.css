@@ -58,8 +58,6 @@
 .montserrat-large {
   font-size: 1.2rem; /* Example large size */
 }
-
-
 .montserrat-larger {
   font-size: 1.5rem; /* Example larger size */
 }
@@ -88,83 +86,24 @@
 }
 /* font */
 
-.middleContainer{
-  position:relative;
-  left: 15%;
-  bottom: 116vh;
-  max-width: 70%;
+.musicVideoimg{
+    margin: auto;
 }
-
-.img{
-  border-radius: 10px;
-  width: 100%;
-  height: 47vh;
-  padding-top: 2.5%;
-  padding-left: 8%;
-  background-image: url('../../img/heroimg.png');
-  background-repeat: no-repeat;
-  background-size: auto 100% ;
-}
-.img:hover .arrow-container{
-  opacity: 1;
-}
-.description{
-  max-width: 30%;
-  width: fit-content;
-  margin-left: 0;
-}
-h1{
+h4{
     color: white;
+    margin: 0 0 0 0;
+    margin-left: 9%;
 }
 p{
-   color:white;
+    margin: 0 0 0 0;
+    margin-left: 9%;
+    color: white;
+    opacity: 60%;
 }
-.listenBtn{
-  width: 10%;
- height: 6vh;
- border-radius: 10px;
- background-color: #8C9EFF;
- color: white;
- outline: none;
- border: none;
- cursor: pointer;
- margin-top: 2%;
-}
-.followBtn{
-  margin-left: 1%;
- width: 10%;
- height: 6vh;
- border-radius: 10px;
- background-color: #8C9EFF;
- color: white;
- outline: none;
- border: none;
- cursor: pointer;
-}
-.arrow {
-  border: 1px solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 7px;
-  cursor: pointer;
-}
-
-.right {
-  position: absolute;
-  left: 103%;
-  bottom: 91%;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  margin-left: 20px;
-}
-.left {
-  position: absolute;
-  left: 2%;
-  bottom: 91%;
-  transform: rotate(135deg);
-  -webkit-transform: rotate(135deg);
-}
-.arrow-container{
-  opacity: 0;
-  transition: .2s ease;
+.musicVideocard{
+    background-color: #1F1F1F;
+    width: fit-content;
+    text-align: left;
+    border-radius: 10px;
+    cursor: pointer;
 }

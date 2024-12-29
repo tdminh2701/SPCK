@@ -1,7 +1,6 @@
-import './weeklycard.css'
+import './newSong.css'
 
-
-function Weeklycard(props){
+function Newsong(props){
     
 
     return(
@@ -11,8 +10,9 @@ function Weeklycard(props){
                 <h4 className='poppins'>{props.songName}</h4>
                 <p className='poppins poppins-small'>{props.authName}</p>
             </div>
+
         </>
     )
 }
 
-export default Weeklycard
+export default Newsong
