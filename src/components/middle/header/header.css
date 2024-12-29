@@ -1,6 +1,4 @@
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* Poppins Font Styles */
 .poppins {
   font-family: 'Poppins', sans-serif;
@@ -88,17 +86,49 @@
 .montserrat-medium {
     font-weight: 500;  /* Example medium weight */
 }
+/* font */
 
-.container{
-    background-color: #1e1e1e;
-    width: 1048.71px;
-    height: 304px;
+#header{
+    position:relative;
+    left: 15%;
+    bottom: 120vh;
+    /* border: 1px solid red; */
+    width: 80%;
+    height: 10vh;
 }
-h2{
+.searchBar{
+    background-color: #232323;
+    background-image: url(../../img/Vector.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
     color: white;
+    opacity: 60%;
+    width: 60%;
+    height: 48%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 6%;
 }
-.card-container {
-    background-color: red;
-    width: 177.91px;
-    height: 233px;
+.loginbtn{
+ font-weight: bold;
+ margin-left: 8%;
+ width: 10%;
+ height: 48%;
+ border-radius: 10px;
+ background-color: #1E1E1E;
+ color: white;
+ outline: none;
+ border: none;
+}
+.signUpbtn{
+ font-weight: bold;
+ margin-left: 2%;
+ width: 10%;
+ height: 48%;
+ border-radius: 10px;
+ background-color: white;
+ color: #1E1E1E;
+ outline: none;
+ border: none;
 }

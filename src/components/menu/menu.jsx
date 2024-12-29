@@ -12,16 +12,22 @@ import icon8 from '../img/ph_playlist.png'
 import icon9 from '../img/subway_add-playlist.png'
 import icon10 from '../img/lets-icons_setting-line.png'
 import icon11 from '../img/line-md_log-out.png'
+import { MdOpacity } from 'react-icons/md'
+import { BiHome } from 'react-icons/bi'
 
+function clickedTab(id){
+    document.getElementById('Home').style.cssText = ""
+    document.getElementById("Discover").style.cssText = ""
+    document.getElementById("Albums").style.cssText = ""
+    document.getElementById("Artists").style.cssText = ""
+    
+    
+    document.getElementById(id).style.cssText = "  background-color: #B388FF"
+}
 
-
-
-document.body.style="background-color: #181818;"
 function Menu() {
-    const pStyle = {color:"#F5F5F5", marginLeft: "8px", marginTop: "30px"}
-    const pClassname = "poppins poppins-larger"
-    const selectedTab = {borderRadius: "9px", backgroundColor: "#B388FF"}
-
+    const pStyle = {color:"#F5F5F5", marginLeft: "8px", marginTop: "30px", opacity: 0.5}
+    const pClassname = "poppins poppins-medium"
 
   return (
     <>
@@ -31,24 +37,23 @@ function Menu() {
         <img className='logo' src={img} alt="" />
     </div>
 
-    <div className='poppins-medium menu'>
+    <div className='poppins-meidum menu'>
 
 
-        <p className='poppins poppins-regular' style={pStyle}>Menu</p>
-
-        <div className='icon' style={selectedTab}>
-            <img src={icon1} alt="" /> <p className={pClassname}>Home</p>
+        <p className='poppins' style={pStyle}>Menu</p>
+        <div id='Home' className='icon'  onClick={() => clickedTab('Home')} style={{backgroundColor: "#B388FF"}}>
+            <img src={icon1} /> <p className={pClassname}>Home</p>
         </div>
-
-        <div className='icon'>
+        
+        <div className='icon' id='Discover' onClick={() => clickedTab('Discover')}>
             <img src={icon2} alt="" /> <p className={pClassname}>Discover</p>
         </div>
 
-        <div className='icon'>
+        <div className='icon' id='Albums' onClick={() => clickedTab('Albums')}>
             <img src={icon3} alt="" /> <p className={pClassname}>Albums</p>
         </div>
 
-        <div className='icon'>
+        <div className='icon'id='Artists' onClick={() => clickedTab('Artists')}>
             <img src={icon4} alt="" /> <p className={pClassname}>Artists</p>
         </div>
 
@@ -83,12 +88,13 @@ function Menu() {
         <div className='icon'>
             <img src={icon11} alt=""/> <p className={pClassname}>Logout</p>
         </div>
-
-
     
     </div>
     </>
   )
+  
 }
+
+
 
 export default Menu
